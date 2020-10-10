@@ -1,0 +1,168 @@
+/* ===GOOGLE-FONTS=== */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/* ===GOOGLE-FONTS=== */
+
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    margin: 2.5rem 0;
+    text-align: center;
+    font-size: 3.5rem;
+    color:hsl(238, 29%, 16%);
+}
+
+h2{
+    font-size: 1.6rem;
+    color:hsl(237, 12%, 33%);
+    font-weight: 400;
+    cursor: pointer;
+    transition: color .25s;
+}
+h2:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+p{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color:hsl(240, 6%, 50%);
+
+}
+/* ===START STYLES=== */
+.main{
+    height: 100vh;
+
+    background-color: hsl(273, 75%, 66%);
+    background-image: linear-gradient( hsl(273, 75%, 66%),hsl(240, 73%, 65%) );
+    padding: 5rem 2.5rem;
+}
+
+.card-wrapper{
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.card{
+    margin-top: 10rem;
+    padding: 2rem 2.5rem 4rem 2.5rem;
+}
+
+.card-img{
+    margin-top: -12.5rem;
+}
+
+
+.card-question{
+    padding: 2rem 0;
+    border-top: 2px solid hsl(240, 5%, 91%);
+}
+
+.card-question:last-of-type{
+    border-bottom:2px solid hsl(240, 5%, 91%);
+}
+
+.question-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question-answer{
+    display: none;
+}
+
+.question-btn{
+    cursor: pointer;
+    background-color: transparent;
+    padding: .5rem;
+    border: none;
+    transition: all .25s;
+}
+
+.question-btn:hover{
+    transform: scale(1.2);
+}
+
+.question-btn:focus{
+    outline: 2px solid hsl(240, 5%, 91%);
+}
+
+.question-btn img{
+    width: 15px;
+}
+
+.card-question.show .question-answer{
+    display: block;
+}
+
+.card-question.show .question-btn.rotate {
+    transform: rotate(180deg);
+  }
+
+  .attribution{
+      text-align: center;
+  }
+/* ===MEDIA-QUERIES=== */
+@media (min-width: 868px){
+
+    .main{
+        padding: 2rem;
+        display: grid;
+        place-items: center;
+
+    }
+
+    .card-wrapper{
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .card{
+        padding: 2rem 2.5rem;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-img{
+        max-width: 500px;
+        margin-top: 0;
+        margin-left: -10rem;
+    }
+
+    .question-wrapper{
+        width: 70%;
+        max-width: 600px;
+        padding: 2rem;
+    }
+
+}
