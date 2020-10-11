@@ -127,6 +127,7 @@ p{
   }
 
   .attribution{
+      padding: 1rem;
       text-align: center;
   }
 /* ===MEDIA-QUERIES=== */
