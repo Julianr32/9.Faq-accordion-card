@@ -188,8 +188,10 @@ p{
     }
 
     .illu-desktop{
+        position: relative;
         transform: scale(1.2);
-
+        z-index: 10;
+        border: 2px solid red;
     }
 
     .bg-pattern{
@@ -197,6 +199,7 @@ p{
         top: -15%;
         left: -42.5%;
         transform: scale(2);
+   
     }
 
     .question-wrapper{
