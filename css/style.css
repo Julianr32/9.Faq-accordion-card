@@ -87,6 +87,7 @@ p{
 .card-question{
     padding: 1.8rem 0;
     border-top: 2px solid hsl(240, 5%, 91%);
+    transition: all .25s;
 }
 
 .card-question:last-of-type{
@@ -109,7 +110,7 @@ p{
 }
 
 .card-question.show .question-answer{
- margin: 0;
+ margin-top: 0;
    visibility: visible;
     opacity: 1;
     height: 5vh;
@@ -132,6 +133,10 @@ p{
 .question-btn img{
     width: 15px;
     user-select: none;
+}
+
+.card-question.show{
+    padding: 1rem 0;
 }
 
 .card-question.show .question-btn.rotate {
