@@ -85,7 +85,7 @@ p{
 
 
 .card-question{
-    padding: 2rem 0;
+    padding: 1.8rem 0;
     border-top: 2px solid hsl(240, 5%, 91%);
 }
 
@@ -100,8 +100,18 @@ p{
 }
 
 .question-answer{
-    display: none;  
+    height: 0;
+    opacity: 0;
+   visibility: hidden;
+   transition: all .25s;
 }
+
+.card-question.show .question-answer{
+    visibility: visible;
+    opacity: 1;
+    height: 5vh;
+}
+
 
 .question-btn{
     cursor: pointer;
@@ -119,14 +129,6 @@ p{
 .question-btn img{
     width: 15px;
     user-select: none;
-}
-
-.show .question-answer{
-    transition: all .5s;
-}
-
-.card-question.show .question-answer{
-    display: block;
 }
 
 .card-question.show .question-btn.rotate {

@@ -13,7 +13,6 @@ questions.forEach((question) =>{
     //Event listener for the buttons.
     questionBtn.addEventListener("click", ()=>{
         showAnswer();
-
     });
 
     function showAnswer(){ 
