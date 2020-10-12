@@ -46,9 +46,7 @@ h2{
     cursor: pointer;
     transition: color .25s;
     user-select: none;
-    pointer-events: none;
 }
-
 
 p{
     margin-top: 1rem;
