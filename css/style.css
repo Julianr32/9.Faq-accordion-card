@@ -108,20 +108,21 @@ p{
     background-color: transparent;
     padding: .5rem;
     border: none;
-    transition: all .25s;
+    outline: none;
+    transition: all .3s;
 }
 
 .question-btn:hover{
     transform: scale(1.2);
 }
 
-.question-btn:focus{
-    outline: 2px solid hsl(240, 5%, 91%);
-}
-
 .question-btn img{
     width: 15px;
     user-select: none;
+}
+
+.show .question-answer{
+    transition: all .5s;
 }
 
 .card-question.show .question-answer{
