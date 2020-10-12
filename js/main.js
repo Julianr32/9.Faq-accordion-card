@@ -1,6 +1,5 @@
 const questions = document.querySelectorAll(".card-question");
 
-
 questions.forEach((question) =>{
     const questionBtn = question.querySelector(".question-btn");
     const title = question.querySelector(".title");
@@ -10,13 +9,14 @@ questions.forEach((question) =>{
     title.addEventListener("click", ()=>{
         showAnswer();
     })
-    //Event listener for the buttons.
 
+    //Event listener for the buttons.
     questionBtn.addEventListener("click", ()=>{
         showAnswer();
+
     });
 
-    function showAnswer(){
+    function showAnswer(){ 
         questions.forEach((item)=>{
             if (item != question){
                 item.classList.remove("show");
