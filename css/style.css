@@ -191,7 +191,6 @@ p{
         position: relative;
         transform: scale(1.2);
         z-index: 10;
-        border: 2px solid red;
     }
 
     .bg-pattern{
