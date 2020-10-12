@@ -47,9 +47,7 @@ h2{
     transition: color .25s;
     user-select: none;
 }
-h2:hover{
-    color: hsl(14, 88%, 65%);
-}
+
 
 p{
     margin-top: 1rem;
@@ -183,8 +181,13 @@ p{
         top: 45%;
         z-index: 100;
     }
+    
     h1{
         text-align: left;
+    }
+
+    h2:hover{
+        color: hsl(14, 88%, 65%);
     }
 
     .card-wrapper{
