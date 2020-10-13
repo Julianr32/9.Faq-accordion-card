@@ -128,10 +128,6 @@ p{
     transition: all .3s;
 }
 
-.question-btn:hover{
-    transform: scale(1.2);
-}
-
 .question-btn img{
     width: 15px;
     user-select: none;
